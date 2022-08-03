@@ -1,0 +1,6 @@
+id;price;reclamation_date;client_id;related_device;reclamation_status
+1;0;11.04.2020;2;CGD826;reported
+2;0;29.09.2021;5;ABD987;reported
+3;0;08.03.2022;3;HSJ823;denied
+4;0;03.12.2021;4;AAA123;finished
+5;450;02.12.2021;1;OFP293;In progress

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="525.0" prefWidth="675.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DbFXStats">
+    <children>
+      <ImageView fitHeight="525.0" fitWidth="675.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../graphics/ServiceStats.png" />
+         </image>
+      </ImageView>
+        <Text layoutX="75.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sum of all clients:" wrappingWidth="127.18023681640625" />
+        <Text layoutX="77.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sum of different reclamations:" />
+        <Text layoutX="107.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reported: " />
+        <Text layoutX="114.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Denied: " />
+        <Text layoutX="101.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="In Progress: " />
+        <Text layoutX="110.0" layoutY="347.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Finished: " />
+        <Text layoutX="129.0" layoutY="402.0" strokeType="OUTSIDE" strokeWidth="0.0" text="All: " />
+        <Text fx:id="tfAllCount" layoutX="206.0" layoutY="402.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+        <Text fx:id="tfFinishedCount" layoutX="206.0" layoutY="347.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+        <Text fx:id="tfInProgressCount" layoutX="206.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+        <Text fx:id="tfDeniedCount" layoutX="206.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+        <Text fx:id="tfReportedCount" layoutX="206.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+        <Text fx:id="tfClientCount" layoutX="206.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+        <PieChart fx:id="chartPie" layoutX="291.0" layoutY="104.0" prefHeight="346.0" prefWidth="323.0" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="525.0" prefWidth="675.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DbFXClient">
+   <children>
+      <ImageView fitHeight="525.0" fitWidth="675.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../graphics/Client.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="allReclamations" layoutX="241.0" layoutY="330.0" prefHeight="118.0" prefWidth="374.0">
+        <columns>
+          <TableColumn fx:id="clientID" prefWidth="59.20001220703125" text="ID" />
+          <TableColumn fx:id="deviceName" prefWidth="84.79998779296875" text="Device" />
+            <TableColumn fx:id="serialNo" prefWidth="83.20001220703125" text="Serial no." />
+            <TableColumn fx:id="price" prefWidth="69.60000610351562" text="Price" />
+            <TableColumn fx:id="reclamationStatus" prefWidth="80.79998779296875" text="Status" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnShowAll" layoutX="446.0" layoutY="297.0" mnemonicParsing="false" onAction="#ShowAllCliked" text="Show all" />
+      <TextField fx:id="tfClientID" editable="false" layoutX="247.0" layoutY="148.0" promptText="client id" />
+      <TextField fx:id="tfDeviceName" layoutX="410.0" layoutY="148.0" promptText="device name" />
+      <Button fx:id="btnAdd" layoutX="576.0" layoutY="227.0" mnemonicParsing="false" onAction="#AddCliked" text="Add" />
+      <TextField fx:id="tfSerialNo" layoutX="410.0" layoutY="189.0" promptText="serial no." />
+      <DatePicker fx:id="dpBoughtDate" layoutX="410.0" layoutY="226.0" prefHeight="26.0" prefWidth="150.0" promptText="bought date" />
+      <TextField fx:id="tfDevicePrice" layoutX="248.0" layoutY="227.0" promptText="device price" />
+      <TextField fx:id="tfType" layoutX="248.0" layoutY="189.0" promptText="type" />
+      <Button fx:id="btnLogOut" layoutX="104.0" layoutY="407.0" mnemonicParsing="false" onAction="#LogOutClicked" text="Log out" />
+   </children>
+</AnchorPane>

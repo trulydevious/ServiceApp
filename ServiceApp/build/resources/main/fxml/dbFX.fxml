@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="525.0" prefWidth="675.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DbFX">
+   <children>
+      <ImageView fitHeight="525.0" fitWidth="675.0">
+         <image>
+            <Image url="@../graphics/ServiceApp.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="edtUser" layoutX="80.0" layoutY="122.0" promptText="username" />
+      <Button fx:id="btnServiceUser" layoutX="80.0" layoutY="155.0" mnemonicParsing="false" onAction="#LoginService" text="LOG IN" textAlignment="CENTER" />
+      <Button fx:id="btnClient" layoutX="80.0" layoutY="284.0" mnemonicParsing="false" onAction="#LoginClient" text="LOG IN" textAlignment="CENTER" wrapText="true">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Button>
+      <PasswordField fx:id="edtPassword" layoutX="237.0" layoutY="122.0" onAction="#edtPassword" promptText="password" />
+      <TextField fx:id="edtClient" layoutX="81.0" layoutY="250.0" onAction="#edtClientID" prefHeight="26.0" prefWidth="147.0" promptText="client id" />
+      <Button fx:id="btnRegister" layoutX="77.0" layoutY="406.0" mnemonicParsing="false" onAction="#btnRegisterClicked" text="REGISTER AS NEW CLIENT" />
+      <PasswordField fx:id="tfPassClient" layoutX="237.0" layoutY="250.0" promptText="password" />
+   </children>
+</AnchorPane>
